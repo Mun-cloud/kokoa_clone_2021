@@ -1,0 +1,24 @@
+.badge {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  left: 12px;
+  bottom: 11px;
+}
+
+.nav__news {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: tomato;
+  position: absolute;
+  left: 20px;
+  bottom: 19px;
+}
