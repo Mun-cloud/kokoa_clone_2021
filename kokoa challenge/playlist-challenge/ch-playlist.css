@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;800&display=swap');
+
+
+
+html,
+body {
+    width: 410px;
+    height: 885px;
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    padding: 50px 25px;
+    border: 5px solid #07c4ae;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.header-title i {
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.play {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    box-sizing: border-box;
+}
+.play-img{
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 130px;
+    height: 130px;
+    background-color: #ffbd11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.play-info {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.play-info__title {
+    margin-top: 15px;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.play-info__artist {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btns {
+    height: 75px;
+    display: flex;
+    margin: 40px 0;
+}
+
+.btn {
+    border: 2px solid black;
+    border-bottom-width: 7px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.btns-play {
+    width: 170px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.btns-play i {
+    margin-right: 10px;
+}
+
+.btns-other {
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+ul {
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+}
+
+.playlist .li-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: tomato;
+    border: 2px solid black;
+    margin-right: 12px;
+}
+
+.playlist:nth-child(2) .li-img {
+    background-color: palevioletred;
+}
+
+.playlist:nth-child(3) .li-img {
+    background-color: blue;
+}
+
+.playlist:last-child .li-img {
+    background-color: cadetblue;
+}
+
+.li-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.li__title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.li__artist {
+    font-size: 12px;
+}
