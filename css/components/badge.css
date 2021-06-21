@@ -19,6 +19,9 @@
   border-radius: 2px;
   background-color: tomato;
   position: absolute;
+}
+
+.nav__btn__badge {
   left: 20px;
-  bottom: 19px;
+  bottom: 19px;  
 }

@@ -23,23 +23,21 @@
     padding-bottom: 5px;
 }
 
-@keyframes fadeIn {
+@keyframes turnfadeIn {
     from{
-        transform: translateY(30px);
         opacity: 0;
     }
     to {
-        transform: none;
+        transform: rotateX(360deg);
         opacity: 1;
     }
 }
 
 .main-chat {
-    margin-top: 110px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -51,12 +49,60 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
+    animation: turnfadeIn 1s ease-in-out forwards;
 }
 
 .message-row {
     width: 100%;
     display: flex;
     margin-bottom: 20px;
+}
+
+@keyframes fadin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.message-row img {
+    animation: fadin 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes sidefadein {
+    from {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.message-row__content {
+    animation: sidefadein 0.5s ease-in-out;
+}
+
+@keyframes sidefadeinown {
+    from {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.message-row--own .message-row__content {
+    animation: sidefadeinown 0.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 
 .message-row img {
@@ -185,7 +231,7 @@
 
 .reply:focus-within input {
     width: 95vw;
-    transform: translateX(-15%) translateY(-80px);
+    transform: translateX(-13%) translateY(-80px);
 }
 
 .reply:focus-within {
